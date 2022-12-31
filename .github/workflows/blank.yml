@@ -1,0 +1,15 @@
+import random
+
+def magic_8_ball():
+  responses = [
+    "It is certain",
+    "Outlook not so good",
+    "Ask again later",
+    "Without a doubt",
+    "My sources say no"
+  ]
+  return random.choice(responses)
+
+question = input("Ask the magic 8 ball a question: ")
+response = magic_8_ball()
+print(response)
